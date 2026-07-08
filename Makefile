@@ -1,5 +1,5 @@
 TARGET = main
-OBJS = main.o greeting.o
+OBJS = main.o greeting.o morning.o night.o
 
 $(TARGET): $(OBJS)
 	$(CC) -o $@ $^

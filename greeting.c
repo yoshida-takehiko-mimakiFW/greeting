@@ -6,13 +6,17 @@ typedef enum ErrorCode {
     ERROR_UNDEFINED = 0xFFFFFFFF
 } ErrorCode;
 
-ErrorCode greeting(const char* name)
+ErrorCode greeting(const char* period_name,const char* person_name)
 {
-    if (name == NULL) {
-        return ERROR_ARG;  // 引数エラー
+    if (period_name == NULL) {
+        return ERROR_ARG;   // 引数エラー
     }
 
-    printf("Hello, %s!\n", name);
+    if (person_name == NULL) {
+        return ERROR_ARG;   // 引数エラー
+    }
 
-    return ERROR_NONE;  // エラーなし（成功）
+    printf("Good %s, %s!\n", period_name, person_name);
+
+    return ERROR_NONE;      // エラーなし（成功）
 }

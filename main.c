@@ -4,11 +4,15 @@ typedef enum ErrorCode {
     ERROR_UNDEFINED = 0xFFFFFFFF
 } ErrorCode;
 
-ErrorCode greeting(const char* name);
+ErrorCode morning_greeting(const char* person_name);
+ErrorCode night_greeting(const char* person_name);
 
 int main(void)
 {
-    ErrorCode result = greeting("Bob");
+    ErrorCode result = ERROR_NONE;
+
+    result |= morning_greeting("Bob");
+    result |= night_greeting("Alice");
 
     return result;
 }
