@@ -1,0 +1,11 @@
+TARGET = main
+OBJS = main.o
+
+$(TARGET): $(OBJS)
+	$(CC) -o $@ $^
+
+%.o: %.c
+	$(CC) -c $<
+
+clean:
+	$(RM) $(TARGET) $(OBJS)
