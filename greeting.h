@@ -1,3 +1,6 @@
+#ifndef GREETING_H
+#define GREETING_H
+
 typedef enum ErrorCode {
     ERROR_NONE      = 0x00000000,
     ERROR_ARG       = 0x00000001,
@@ -5,3 +8,5 @@ typedef enum ErrorCode {
 } ErrorCode;
 
 ErrorCode greeting(const char* period_name,const char* person_name);
+
+#endif /* GREETING_H */
