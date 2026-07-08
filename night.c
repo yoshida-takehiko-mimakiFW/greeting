@@ -1,4 +1,4 @@
-#include "greeting.h"
+#include "night.h"
 
 ErrorCode night_greeting(const char* person_name)
 {
