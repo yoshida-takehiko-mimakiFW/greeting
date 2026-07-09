@@ -9,4 +9,6 @@ typedef enum ErrorCode {
 
 ErrorCode greeting(const char* period_name,const char* person_name);
 
+extern char message[256];
+
 #endif /* GREETING_H */

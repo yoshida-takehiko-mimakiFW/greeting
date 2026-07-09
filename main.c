@@ -2,8 +2,6 @@
 #include "night.h"
 #include <stdio.h>
 
-extern char message[256];
-
 int main(void)
 {
     ErrorCode result = ERROR_NONE;
